@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffede1;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
+}
+
+section-p1 {
+    padding: 40px 80px;
+}
+
+button.normal {
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    border: 15px;
+    cursor: pointer;
+}
+
+/* navbar css */
+#header {
+    padding: 20px 80px;
+    box-shadow: 0px 20px 25px rgb(0, 0, 0, 0.07);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+#header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header .navbar .nav-1,
+#header .navbar .nav-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header .navbar li a {
+    text-decoration: none;
+}
+
+#header .navbar li {
+    list-style: none;
+}
+
+/* #header .navbar .nav-1 li,
+#header .navbar .nav-2 li{
+    font-size: 1rem;
+    padding: 5px 10px;
+} */
+#header .navbar .nav-1 a {
+    color: #439483;
+    font-size: 1.1rem;
+    padding: 5px 20px;
+    font-weight: 600;
+}
+
+#header .navbar .nav-2 input {
+    width: 200px;
+    border: 1px solid #439483;
+    background-color: #439483;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#header .navbar .nav-2 input::placeholder {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#header .navbar .nav-2 i {
+    color: #439483;
+    font-size: 1.3rem;
+    padding: 6px 25px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+#header .navbar .nav-2 button {
+    /* font-size: 1.rem; */
+    border: none;
+    cursor: pointer;
+}
+
+/* Main Page  */
+#main-page {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    width: 98vw;
+}
+
+#main-page .main-img {
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 5px;
+}
+
+#main-page .main-img img {
+    width: 85%;
+}
+
+#main-page .main-img h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #377a6c;
+    margin-top: -20px;
+}
+
+#main-page .main-img p {
+    font-size: 1rem;
+    color: #377a6c;
+}
+
+#main-page .main-details {
+    width: 48%;
+}
+
+#main-page .main-details h1 {
+    font-size: 5.5rem;
+    line-height: 6rem;
+    color: #fa7001;
+}
+
+#main-page .main-details .btn {
+    border-radius: 8px;
+    margin: 10px 10px;
+}
+
+#btn1 {
+    background-color: #1e6656;
+    color: #ffede1;
+    border: 1.5px solid #ffede1;
+}
+
+#btn2 {
+    background-color: #ffede1;
+    color: #439483;
+    border: 2px solid #439483;
+
+}
+
+#main-page .main-details .main-subpart {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: center;
+    background-color: #fa7001;
+    color: #ffede1;
+    margin-right: -12px;
+    border-top-left-radius: 27px;
+    border-bottom-left-radius: 27px;
+    margin-top: 50px;
+
+}
+
+#main-page .main-details .main-subpart span {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    /* text-align: center; */
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 28px 0 0 8px;
+    background-color: #fa7001;
+}
+
+#main-page .main-details .main-subpart .main-dish {
+    width: 20%;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fa7001;
+    padding: 10px;
+    margin: 10px 5px;
+}
+
+#main-page .main-details .main-subpart .main-dish img {
+    width: 140px;
+    background-color: #fa7001;
+}
+
+#main-page .main-details .main-subpart .main-dish p {
+    font-size: 0.8rem;
+    width: 140px;
+    margin-top: -12px;
+    background-color: transparent;
+}
+
+#main-page .main-details .main-subpart a {
+    text-decoration: none;
+    margin: auto;
+    background-color: #fa7001;
+}
+
+#main-page .main-details .main-subpart i {
+    color: #ffede1;
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+
+/* favorite section  */
+#favorites {
+    width: 100%;
+    /* height: 70vh; */
+    background-color: #439483;
+    /* z-index: 2; */
+    padding: 60px 80px;
+    margin: 50px 0px 30px 0;
+    text-align: center;
+}
+
+#favorites h2 {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 5.5rem;
+    color: #ffede1;
+    /* color: #ffede1; */
+    background-color: #439483;
+}
+
+#favorites p {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #ffede1;
+    background-color: #439483;
+    margin-bottom: 25px;
+}
+
+#favorites .fav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #439483;
+}
+
+#favorites .fav-items .item1 {
+    border-radius: 20px;
+    background-color: #ffede1;
+    margin: 5px 35px;
+    border-radius: 30px;
+    padding: 40px 25px;
+    width: 23%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#favorites .fav-items .item1 img {
+    width: 100%;
+    margin: 25px 0;
+}
+
+#favorites .fav-items .item1 h4 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: #1e6656;
+}
+
+#favorites .fav-items .item1 p {
+    text-transform: none;
+    font-size: 0.9rem;
+    color: #1e6656;
+    background-color: #ffede1;
+    margin: -45px 0 15px 0;
+}
+
+/* Monthly meal  */
+#month-meal {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    height: 90vh;
+    width: 98vw;
+    padding: 20px 100px;
+}
+
+#month-meal .month-img {
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 5px;
+}
+
+#month-meal .meal-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+#month-meal .meal-details h4{
+    font-size: 1.2rem;
+    color :#1e6656;
+    text-transform: uppercase;
+}
+#month-meal .meal-details h1{
+    font-size: 5.5rem;
+    line-height: 6rem;
+    color: #fa7001;
+    margin: 25px 0;
+}
+#month-meal .meal-details p{
+    font-size: 0.9rem;
+    color: #1e6656;
+    font-weight: 500;
+}
+
+#month-meal .meal-details .img-details {
+    width: 100%;
+    display: flex;
+    margin: 30px 0;
+    justify-content: space-evenly;
+}
+
+#month-meal .meal-details .img-details .img {
+    width: 45%;
+    position: relative;
+}
+
+#month-meal .meal-details .img-details .img img {
+    width: 90%;
+    display: block;
+}
+#month-meal .meal-details .img-details .img button{
+    color: #ffede1;
+    background-color: #1e6656;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 145px;
+    left: 10px;
+}
+
+/* recipe page  */
+#recipes {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    height: 90vh;
+    width: 98vw;
+    padding: 20px 0 0 180px;
+    margin: 50px 0;
+}
+
+#recipes .recipe-opt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#recipes .recipe-opt h1{
+    font-size: 5.5rem;
+    line-height: 6rem;
+    color: #fa7001;
+    margin: 10px 0 20px 20px;
+}
+#recipes .recipe-opt h4{
+    font-size: 1.2rem;
+    color: #1e6656;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+#recipes .recipe-img{
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 5px;
+}
+#recipes .recipe-opt .recipes-details{
+    width: 100%;
+    display: flex;
+    margin: 30px 0;
+    justify-content: space-evenly;
+    flex-wrap : wrap;
+}
+#recipes .recipe-opt .recipes-details .img{
+    width: 45%;
+    position: relative;
+    margin-bottom: 50px;
+}
+#recipes .recipe-opt .recipes-details .img img {
+    width: 90%;
+    display: block;
+}
+#recipes .recipe-opt .recipes-details .img button{
+    color: #ffede1;
+    background-color: #1e6656;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 145px;
+    left: 10px;
+}
+
+
+/* process page  */
+#process{
+    height: 80vh;
+    width: 98.7vw;
+    background-color: #439483;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+}
+#process h2{
+    font-size: 4.5rem;
+    background-color: #439483;
+    color: #ffede1;
+}
+#process p{
+    font-size: 0.9rem;
+    background-color: #439483;
+    color: #ffede1;
+}
+#process .process-step{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #439483;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#process .process-step .step{
+    width: 17%;
+    background-color: #ffede1;
+    color: #fa7001;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+#process .process-step .step h3{
+    background-color: #ffede1;
+    color: #fa7001;
+    margin: 20px 0;
+    font-size: 1.3rem;
+}
+
+#process .process-step .step p{
+    background-color: #ffede1;
+    color: #fa7001;
+    margin: 20px 0;
+}
+#process .process-step .step img{
+    background-color: #ffede1;
+    margin: 50px 0;
+}
+
+#process .process-step .arrow{
+    width: 8%;
+    /* height: 10vh; */
+    background-color: #439483;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+#process .process-step .arrow img{
+    color: #ffede1;
+    background-color: #439483;
+}
+
+
+/* meal plans love  */
+#meal-plan{
+    display: flex;
+    align-items: center;
+    width: 98.7vw;
+}
+#meal-plan .meal-love{
+    width: 50%;
+    padding: 0 0 0 80px;
+    margin-left: 80px;
+}
+#meal-plan .meal-love h2{
+    font-size: 6rem;
+    line-height: 5.5rem;
+    padding-bottom: 30px;
+    color: #fa7001;
+}
+#meal-plan .meal-love p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #1e6656;
+    font-weight: 600;
+}
+#meal-plan .meal-love .btn1{
+    background-color: #1e6656;
+    color: #ffede1;
+    border-radius: 10px;
+    border: 2px solid #1e6656;
+    margin: 5px 15px 0 0;
+}
+#meal-plan .meal-love .btn2{
+    background-color: #ffede1;
+    color: #1e6656;
+    border: 2px solid #1e6656;
+    border-radius: 10px;
+}
+
+#meal-plan .love-img .orange{
+    height: 800px;
+    width: 450px;
+    background-color: #fa7001;
+    right: 0;
+    margin: 70px 0 70px 450px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#meal-plan .love-img{
+    position :relative;
+}
+#meal-plan .love-img .arr{
+    position :absolute;
+    top: 122px;
+    right: 112px;
+    background-color: transparent;
+    z-index: 10;
+    background-color: transparent;
+}
+
+#meal-plan .love-img .salad {
+    position: absolute;
+    top: 175px;
+    right: 120px;
+    background-color: transparent;
+}
+#meal-plan .love-img p{
+    position: absolute;
+    top: 160px;
+    right: 110px;
+    text-align: right;
+    background-color: #fa7001;
+    font-size: 1.2rem;
+    color: #ffede1;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* People page  */
+
+#people{
+    height: 550px;
+    background-color: #439483;
+    padding: 30px 80px;
+    /* align-items: center;
+    justify-content: center;
+    text-align: center; */
+}
+#people h1{
+    font-size: 4.5rem;
+    margin: 0px 0 20px 0;
+    background: transparent;
+    color: #ffede1;
+    text-align: center;
+}
+
+#people .people-detail{
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    margin: 10px auto;
+    background-color: #439483;
+}
+
+#people .people-detail .details{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #439483;
+    width: 30%;
+}
+
+#people .people-detail .details img{
+    background-color: transparent;
+    margin: 30px 0 20px 0;
+}
+#people .people-detail .details h4{
+    background-color: transparent;
+    color: #ffede1;
+    font-size: 1.1rem;
+
+}
+#people .people-detail .details p{
+    background-color: transparent;
+    color: #ffede1;
+    margin: 20px 0 20px 0;
+    font-size: 0.9rem;
+}
+
+/* Group 8  */
+#group8{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98.7vw;
+    height: 830px;
+}
+
+#group8 .details{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 45%;
+}
+#group8 .details h2{
+    font-size: 5rem;
+    line-height: 5rem;
+    margin: 20px 0;
+    color: #fa7001;
+}
+#group8 .details p{
+    color: #1e6656;
+    font-weight: 500;
+}
+#group8 .details button{
+    background-color: #1e6656;
+    font-size: 1.2rem;
+    color: #ffede1;
+    border: 1px solid #1e6656;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+
+#group8 .left{
+    position: relative;
+}
+#group8 .left img {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    width: 380px;
+}
+#group8 .right{
+    position: relative;
+}
+#group8 .right img {
+    position: absolute;
+    top: -400px;
+    right: 0;
+    width: 370px;
+}
+
+#footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding: 100px 120px;
+    width: 98.7vw;
+    background-color: #439483;
+}
+/* #footer div{
+    width: 25%;
+} */
+#footer div{
+    background-color: #439483;
+}
+
+#footer .services{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+#footer .team{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+#footer .legal{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+#footer .newsletter{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+#footer div h3{
+    color: #ffede1;
+    background-color: #439483;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+#footer div p{
+    color: #ffede1;
+    background-color: #439483;
+    font-size: 1rem;
+    line-height: 2.2rem;
+}
+#footer div a{
+    text-decoration: none;
+    color: #ffede1;
+    background-color: #439483;
+    font-size: 1rem;
+    line-height: 2rem;
+}
